@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pagina</title>
+    <meta
+      name="viewport"
+      content="width=divice=width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="keywords" content="Diseño grafico, trabajos de diseño" />
+    <meta
+      name="description"
+      content="Diseñador grafico profesional, moderno y con buen estilo"
+    />
+    <meta name="owner" content="Alfonso Tort" />
+    <meta name="author" content="Alfonso Tort" />
+    <meta name="robots" content="index, follow" />
+
+    <script src="./js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="./ccs/normalize.css" />
+    <link rel="stylesheet" href="./ccs/Styles.css" />
+    <link rel="stylesheet" href="./ccs/iconmoon.css" />
+    <link rel="stylesheet" href="./ccs/Cafe_Font.css" />
+    <link rel="stylesheet" href="./ccs/Anek_Regular.css" />
+    <link rel="stylesheet" href="./iconos/iconmoon.css" />
+    <link rel="stylesheet" href="./ccs/Aler.css" />
+    <link rel="stylesheet" href="./ccs/Aldo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="Proyect.html">
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./img/logos.svg"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </a>
+        <a href="Proyect.html">Primer proyecto</a>
+      </h1>
+
+      <nav id="ioMenu">
+        <figure id="ShowMenu" class="ioMenuMovil" onclick="displayMenu()">
+          <img src="iconos/190-menu.png" alt="" />
+        </figure>
+        <div id="card_menu" style="display: flex">
+          <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()">
+            <img src="iconos/272-cross.png" alt="" />
+          </figure>
+
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./img/logos.svg"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+          <ul>
+            <li><a onclick="navSection('home')" href="#">Home</a></li>
+            <li><a onclick="navSection('aboutme')" href="#">Sobre mi</a></li>
+            <li><a onclick="navSection('skills')" href="#">Skills</a></li>
+            <li><a onclick="navSection('portfolio')" href="#">Portfolio</a></li>
+            <li><a onclick="navSection('blog')" href="#">Blog</a></li>
+            <li>
+              <a onclick="displayFormContact('grid')" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="prev_section" onclick="displaySection('prev')">
+        <img src="iconos/337-ctrl.png" alt="" />
+      </div>
+      <div id="next_section" onclick="displaySection('next')">
+        <img src="iconos/337-ctrl.png" alt="" />
+      </div>
+    </header>
+
+    <div id="slider">
+      <section class="slide" id="home">
+        <div class="mainanimation">
+          <div id="particles-js"></div>
+        </div>
+        <div class="mainlogo">
+          <h2>Soy un <strong>Diseñandor Grafico</strong></h2>
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./img/logos.svg"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </div>
+
+        <div class="buttonspage">
+          <div id="contratame" onclick="displayFormContact('grid')">
+            CONTRATAME
+          </div>
+          <a
+            href="https://www.modelos-de-curriculum.com/wp-content/uploads/2019/03/65-curriculum-vitae-sin-foto.jpg"
+            target="blanck"
+            >DESCARGAR CV</a
+          >
+        </div>
+      </section>
+
+      <section class="slide" id="aboutme" style="display: none"></section>
+      <section class="slide" id="skills" style="display: none"></section>
+      <section class="slide" id="portfolio" style="display: none"></section>
+      <section class="slide" id="blog" style="display: none"></section>
+    </div>
+
+    <div id="contact_form">
+      <div class="contenedor">
+        <div id="close_form" onclick="displayFormContact('none')">
+          <img src="iconos/272-cross.png" alt="" />
+        </div>
+        <figure id="logo_mensaje">
+          <img src="./iconos/email.png" alt="" />
+        </figure>
+        <p>Di Hola</p>
+      </div>
+      <form action="contact.php" id="form1" name="form1" method="post">
+        <section>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre"
+            onfocus="if(this.placeholder='') this.placeholder='tu nombre'"
+          />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Tu email"
+            onfocus="if(this.placeholder='') this.placeholder='tu emial'"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Mensaje"
+            onfocus="if(this.placeholder='') this.placeholder='Mensaje'"
+          ></textarea>
+          <input type="submit" name="Submit" id="button" value="ENVIAR" />
+        </section>
+      </form>
+    </div>
+
+    <div id="contact_button" onclick="displayFormContact('grid')">
+      <img src="./iconos/flyight.png" alt="" />
+    </div>
+
+    <footer>
+      <div class="rrss">
+        <a href="#">
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./iconos/407-twitter.png"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./iconos/404-whatsapp.png"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./iconos/401-facebook.png"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewbox="0 0 200 200">
+            <image
+              href="./iconos/398-google-plus3.png"
+              x="0"
+              y="0"
+              width="200"
+              height="200"
+            />
+          </svg>
+        </a>
+      </div>
+      <p>@ All rights reserved Privaticy Policy</p>
+    </footer>
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      alertSize();
+      function alertSize() {
+        var myWidth = 0,
+          myHeight = 0;
+        if (typeof window.innerWidth == "number") {
+          //No-IE
+          myWidth = window.innerWidth;
+          myHeight = window.innerHeight;
+        } else if (
+          document.documentElement &&
+          (document.documentElement.clientWidth ||
+            document.documentElement.clientHeight)
+        ) {
+          //IE 6+
+          myWidth = document.documentElement.clientWidth;
+          myHeight = document.documentElement.clientHeight;
+        } else if (
+          document.body &&
+          (document.body.clientWidth || document.body.clientHeight)
+        ) {
+          //IE 4 compatible
+          myWidth = document.body.clientWidth;
+          myHeight = document.body.clientHeight;
+        }
+        var display;
+        var card_menu = document.getElementById("card_menu");
+        display = card_menu.style.display;
+        if (myWidth < 767) {
+          card_menu.style.display = "none";
+        } else {
+          card_menu.style.display = "flex";
+        }
+      }
+
+      function displayMenu() {
+        var display;
+        var card_menu = document.getElementById("card_menu");
+        display = card_menu.style.display;
+
+        if (display == "none") {
+          card_menu.style.display = "flex";
+        } else {
+          card_menu.style.display = "none";
+        }
+      }
+
+      function navSection(nav) {
+        var sections = new Array(5);
+        sections[0] = "home";
+        sections[1] = "aboutme";
+        sections[2] = "skills";
+        sections[3] = "portfolio";
+        sections[4] = "blog";
+
+        var search;
+        var show;
+        var bkgr_budy;
+        var bkgr_menu;
+
+        for (var i = 0; i < 5; i++) {
+          search = document.getElementById(sections[i]);
+          search.style.display = "none";
+
+          if (sections[i] == nav) {
+            search.style.display = "block";
+
+            if (sections[i] == "home") {
+              bkgr_budy = "#233D58";
+              bkgr_menu = "#233D58";
+            } else {
+              bkgr_budy = "#f1f1f1";
+              bkgr_menu = "#29abe2";
+            }
+            search.style.background = bkgr_budy;
+            var menu = document.getElementsByTagName("header")[0];
+            menu.style.background = bkgr_menu;
+          }
+        }
+      }
+
+      function displaySection(nav) {
+        var sections = new Array(5);
+        sections[0] = "home";
+        sections[1] = "aboutme";
+        sections[2] = "skills";
+        sections[3] = "portfolio";
+        sections[4] = "blog";
+
+        var search;
+        var show;
+
+        for (var i = 0; i < 5; i++) {
+          search = document.getElementById(sections[i]);
+          show = search.style.display;
+
+          if (show == "block") {
+            search.style.display = "none";
+            if (nav == "next") {
+              i++;
+              if (i > 4) i = 0;
+            }
+            if (nav == "prev") {
+              i--;
+              if (i < 0) i = 4;
+            }
+            search = document.getElementById(sections[i]);
+            search.style.display = "block";
+            break;
+          }
+        }
+        if (sections[i] == "home") {
+          bkgr_budy = "#233D58";
+          bkgr_menu = "#233D58";
+        } else {
+          bkgr_budy = "#f1f1f1";
+          bkgr_menu = "#29abe2";
+        }
+        search.style.background = bkgr_budy;
+        var menu = document.getElementsByTagName("header")[0];
+        menu.style.background = bkgr_menu;
+      }
+      function displayFormContact(status) {
+        var form = document.getElementById("contact_form");
+        form.style.display = status;
+      }
+    </script>
+  </body>
+</html>
