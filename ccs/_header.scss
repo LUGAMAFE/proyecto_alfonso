@@ -71,30 +71,25 @@ header {
     margin: 5px;
     position: absolute;
     top: 0px;
-    overflow: hidden;
   }
   #prev_section {
     right: 35px;
-    img {
-      width: 200%;
-      top: -13px;
-      left: -3px;
-      position: relative;
-    }
-    img {
-      transform: rotate(-90deg);
+    svg {
+      transform: rotate(90deg);
+      image {
+        position: relative;
+        fill: currentColor;
+      }
     }
   }
   #next_section {
     right: 5px;
-    img {
-      width: 200%;
-      top: -13px;
-      left: -21px;
-      position: relative;
-    }
-    img {
-      transform: rotate(90deg);
+    svg {
+      transform: rotate(-90deg);
+      image {
+        position: relative;
+        fill: currentColor;
+      }
     }
   }
   @media screen and (min-width: 767px) {
@@ -187,19 +182,20 @@ header {
     }
     #prev_section {
       top: 115px;
-
-      img {
-        width: 100%;
-        top: 0px;
-        left: 7px;
+      svg {
+        image {
+          width: 100%;
+          fill: currentColor;
+        }
       }
     }
     #next_section {
       top: 190px;
-      img {
-        width: 100%;
-        top: 0px;
-        left: -7px;
+      svg {
+        image {
+          width: 100%;
+          fill: currentColor;
+        }
       }
     }
   }

@@ -8,6 +8,9 @@
   right: 10px;
   position: fixed;
   top: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 767px) {
     right: 40px;
   }
@@ -15,9 +18,7 @@
 #contact_button:hover {
   cursor: pointer;
 }
-#contact_button img {
-  position: relative;
-  width: 100%;
-  transform: scale(0.5);
-  left: -3px;
+#contact_button svg {
+  width: 80%;
+  height: 80%;
 }

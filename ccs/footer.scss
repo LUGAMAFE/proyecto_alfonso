@@ -46,6 +46,11 @@ footer {
       height: 40px;
       display: inline-block;
       padding: 2px;
+      svg {
+        image {
+          fill: currentColor;
+        }
+      }
     }
   }
 

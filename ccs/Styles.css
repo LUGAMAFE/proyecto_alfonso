@@ -67,26 +67,21 @@ header {
     cursor: pointer;
     margin: 5px;
     position: absolute;
-    top: 0px;
-    overflow: hidden; }
+    top: 0px; }
   header #prev_section {
     right: 35px; }
-    header #prev_section img {
-      width: 200%;
-      top: -13px;
-      left: -3px;
-      position: relative; }
-    header #prev_section img {
-      transform: rotate(-90deg); }
+    header #prev_section svg {
+      transform: rotate(90deg); }
+      header #prev_section svg image {
+        position: relative;
+        fill: currentColor; }
   header #next_section {
     right: 5px; }
-    header #next_section img {
-      width: 200%;
-      top: -13px;
-      left: -21px;
-      position: relative; }
-    header #next_section img {
-      transform: rotate(90deg); }
+    header #next_section svg {
+      transform: rotate(-90deg); }
+      header #next_section svg image {
+        position: relative;
+        fill: currentColor; }
   @media screen and (min-width: 767px) {
     header {
       height: 50px;
@@ -165,16 +160,14 @@ header {
         border-radius: 50%; }
       header #prev_section {
         top: 115px; }
-        header #prev_section img {
+        header #prev_section svg image {
           width: 100%;
-          top: 0px;
-          left: 7px; }
+          fill: currentColor; }
       header #next_section {
         top: 190px; }
-        header #next_section img {
+        header #next_section svg image {
           width: 100%;
-          top: 0px;
-          left: -7px; } }
+          fill: currentColor; } }
 
 #slider {
   width: 100%;
@@ -447,7 +440,10 @@ header {
   z-index: 80;
   right: 10px;
   position: fixed;
-  top: 80vh; }
+  top: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @media screen and (min-width: 767px) {
     #contact_button {
       right: 40px; } }
@@ -455,11 +451,9 @@ header {
 #contact_button:hover {
   cursor: pointer; }
 
-#contact_button img {
-  position: relative;
-  width: 100%;
-  transform: scale(0.5);
-  left: -3px; }
+#contact_button svg {
+  width: 80%;
+  height: 80%; }
 
 footer {
   width: 100%;
@@ -506,6 +500,8 @@ footer {
       height: 40px;
       display: inline-block;
       padding: 2px; }
+      footer .rrss a svg image {
+        fill: currentColor; }
   footer p {
     font-size: 0.7em;
     font-family: "Aller";
