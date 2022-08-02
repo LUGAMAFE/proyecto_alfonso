@@ -1,0 +1,236 @@
+#slider {
+  width: 100%;
+  grid-area: slider;
+  height: 700px;
+  section.slide {
+    width: 100%;
+    height: 130%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #home {
+    font-family: "Aldo";
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background: #233d58;
+    .mainanimation {
+      width: 80%;
+      margin-left: 10%;
+      min-height: 400px;
+      position: absolute;
+      canvas {
+        display: block;
+        vertical-align: bottom;
+      }
+      /* ---- particles.js container ---- */
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      /* ---- stats.js ---- */
+      .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13e8e9;
+        font-size: 0.8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+      }
+      .js-count-particles {
+        font-size: 1.1em;
+      }
+      #stats,
+      .count-particles {
+        -webkit-user-select: none;
+      }
+      #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+      }
+      .count-particles {
+        border-radius: 0 0 3px 3px;
+      }
+    }
+    .mainlogo {
+      background: none;
+      width: 60vw;
+      align-self: center;
+      z-index: 9;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      h2 {
+        font-size: 1.2em;
+        color: white;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        strong {
+          font-size: 2em;
+        }
+      }
+      figure,
+      figure img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .buttonspage {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .buttonspage > * {
+      width: 40%;
+      margin: 25px 2%;
+      color: white;
+      padding: 15px 2.5%;
+    }
+    #contratame {
+      cursor: pointer;
+      background: #96eb3f;
+    }
+    a {
+      text-decoration: none;
+      background: #29abe2;
+    }
+    @media screen and (min-width: 950px) {
+      font-family: "Aldo";
+      font-size: 20px;
+      text-align: center;
+      color: black;
+
+      background: #233d58;
+      .mainanimation {
+        width: 80%;
+        margin-left: 10%;
+        min-height: 400px;
+        position: absolute;
+        canvas {
+          display: block;
+          vertical-align: bottom;
+        }
+        /* ---- particles.js container ---- */
+        #particles-js {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          background-image: url("");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
+        /* ---- stats.js ---- */
+        .count-particles {
+          background: #000022;
+          position: absolute;
+          top: 48px;
+          left: 0;
+          width: 80px;
+          color: #13e8e9;
+          font-size: 0.8em;
+          text-align: left;
+          text-indent: 4px;
+          line-height: 14px;
+          padding-bottom: 2px;
+          font-family: Helvetica, Arial, sans-serif;
+          font-weight: bold;
+        }
+        .js-count-particles {
+          font-size: 1.1em;
+        }
+        #stats,
+        .count-particles {
+          -webkit-user-select: none;
+        }
+        #stats {
+          border-radius: 3px 3px 0 0;
+          overflow: hidden;
+        }
+        .count-particles {
+          border-radius: 0 0 3px 3px;
+        }
+      }
+      .mainlogo {
+        background: none;
+        width: 60vw;
+        margin-left: 0vw;
+        min-height: 430px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        h2 {
+          color: white;
+
+          strong {
+            font-size: 2em;
+          }
+        }
+        figure,
+        figure img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #aboutme {
+    height: 400px;
+  }
+
+  #skills {
+    height: 300px;
+  }
+
+  #portfolio {
+    height: 200px;
+  }
+
+  #blog {
+    height: 100px;
+  }
+
+  @media screen and (min-width: 480px) {
+    #home .mainlogo {
+      width: 270px;
+
+      h2 {
+        font-size: 1.4em;
+      }
+      figure {
+        width: 100%;
+      }
+    }
+    #home .buttonspage > * {
+      width: 200px;
+    }
+  }
+}

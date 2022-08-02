@@ -1,0 +1,12 @@
+body {
+  font-size: 16px;
+  font-family: "Aller";
+  background-color: #233d58;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "slider"
+    "footer";
+}
